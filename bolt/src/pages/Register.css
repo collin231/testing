@@ -1,0 +1,419 @@
+/* Register Page Styles */
+.register-page {
+  min-height: 100vh;
+  background: var(--light-gray);
+}
+
+/* Hero Section */
+.register-hero {
+  background: linear-gradient(135deg, var(--primary-black) 0%, var(--dark-green) 100%);
+  padding: 120px 20px 80px;
+  color: var(--primary-white);
+  text-align: center;
+}
+
+.register-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.register-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Registration Form Section */
+.register-form-section {
+  background: var(--light-gray);
+  padding: 80px 20px;
+  color: var(--primary-black);
+}
+
+/* Progress Container */
+.progress-container {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.progress-info p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 400px;
+  height: 8px;
+  background: rgba(0, 166, 81, 0.2);
+  border-radius: 4px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary-green);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Form Card */
+.form-card {
+  background: var(--primary-white);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 166, 81, 0.1);
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(0, 166, 81, 0.1);
+}
+
+.form-header h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  margin: 0;
+}
+
+.header-icon {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  background: var(--light-green);
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+
+/* Form Rows */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 15px 20px;
+  border: 2px solid rgba(0, 166, 81, 0.15);
+  border-radius: 10px;
+  font-size: 1rem;
+  background: var(--primary-white);
+  color: var(--primary-black);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(0, 166, 81, 0.1);
+}
+
+.form-group input.error,
+.form-group select.error {
+  border-color: #e74c3c;
+}
+
+/* Date Input Wrapper */
+.date-input-wrapper {
+  position: relative;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+/* Contact Preference */
+.contact-preference {
+  margin-top: 30px;
+}
+
+.contact-preference label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.preference-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.preference-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 25px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: var(--primary-white);
+  color: var(--primary-black);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.preference-btn:hover {
+  border-color: var(--primary-green);
+  transform: translateY(-2px);
+}
+
+.preference-btn.active {
+  background: var(--light-green);
+  border-color: var(--primary-green);
+  color: var(--primary-green);
+}
+
+.preference-icon {
+  font-size: 1.2rem;
+}
+
+/* Error Messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Verification Summary */
+.verification-summary {
+  background: var(--light-green);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 166, 81, 0.2);
+}
+
+.verification-summary h4 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.summary-item {
+  font-size: 0.95rem;
+  color: var(--gray);
+  padding: 12px 15px;
+  background: var(--primary-white);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 166, 81, 0.1);
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--primary-black);
+  position: relative;
+  padding-left: 35px;
+  line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  background: var(--primary-white);
+  border: 2px solid rgba(0, 166, 81, 0.3);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+  background: var(--primary-green);
+  border-color: var(--primary-green);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Payment Notice */
+.payment-notice {
+  background: var(--light-green);
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 30px;
+  border: 1px solid rgba(0, 166, 81, 0.2);
+}
+
+.payment-notice h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+.payment-notice p {
+  color: var(--gray);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.payment-methods span {
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-icons span {
+  background: var(--primary-white);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: 1px solid rgba(0, 166, 81, 0.1);
+}
+
+/* Step Navigation */
+.step-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.step-navigation .btn {
+  min-width: 140px;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .form-card {
+    padding: 30px 25px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .preference-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .step-navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .step-navigation .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-hero {
+    padding: 100px 20px 60px;
+  }
+  
+  .register-form-section {
+    padding: 60px 15px;
+  }
+  
+  .form-card {
+    padding: 25px 20px;
+  }
+  
+  .form-header h3 {
+    font-size: 1.5rem;
+  }
+}

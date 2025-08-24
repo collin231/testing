@@ -1,0 +1,380 @@
+.party-store {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.store-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+}
+
+.store-header h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.store-header p {
+  font-size: 1.2rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.store-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.store-section {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.store-section h2 {
+  color: #2c3e50;
+  margin: 0 0 20px 0;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #4CAF50;
+  padding-bottom: 10px;
+}
+
+/* Physical Card Form */
+.physical-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.physical-card-form input {
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.physical-card-form input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.order-card-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.order-card-btn:hover:not(:disabled) {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.order-card-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Merchandise Grid */
+.merchandise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.merch-item {
+  background: white;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.merch-item:hover {
+  border-color: #4CAF50;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.2);
+}
+
+.item-image {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.item-details h3 {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+}
+
+.item-details p {
+  color: #666;
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+}
+
+.item-price {
+  color: #4CAF50;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.add-to-cart-btn {
+  background: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background: #1976D2;
+  transform: translateY(-2px);
+}
+
+/* Shopping Cart */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background: #45a049;
+}
+
+.quantity {
+  font-weight: 600;
+  color: #2c3e50;
+  min-width: 30px;
+  text-align: center;
+}
+
+.remove-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #d32f2f;
+}
+
+/* Donations */
+.donation-section {
+  text-align: center;
+}
+
+.donation-section p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.donation-amounts {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.donation-btn {
+  background: white;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.donation-btn:hover,
+.donation-btn.active {
+  background: #4CAF50;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.custom-donation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-donation label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.custom-donation input {
+  padding: 10px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 200px;
+  text-align: center;
+}
+
+.custom-donation input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Checkout */
+.checkout-section {
+  background: #4CAF50;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.total-amount h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.8rem;
+}
+
+.checkout-btn {
+  background: white;
+  color: #4CAF50;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.checkout-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.checkout-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .party-store {
+    padding: 15px;
+  }
+  
+  .store-header {
+    padding: 20px;
+  }
+  
+  .store-header h1 {
+    font-size: 2rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .merchandise-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .donation-amounts {
+    gap: 10px;
+  }
+  
+  .donation-btn {
+    min-width: 80px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .cart-item {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .cart-item-controls {
+    justify-content: center;
+  }
+}

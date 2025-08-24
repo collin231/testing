@@ -1,0 +1,405 @@
+/* User Management Styles */
+.user-management {
+  width: 100%;
+}
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.users-header h2 {
+  margin: 0;
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+.users-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  background: rgba(0, 166, 81, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--primary-green);
+  border: 1px solid rgba(0, 166, 81, 0.2);
+}
+
+/* Controls */
+.users-controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.search-filter {
+  flex: 1;
+  min-width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid rgba(0, 166, 81, 0.2);
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: var(--primary-white);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(0, 166, 81, 0.1);
+}
+
+.status-filter {
+  min-width: 150px;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid rgba(0, 166, 81, 0.2);
+  border-radius: 25px;
+  font-size: 1rem;
+  background: var(--primary-white);
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(0, 166, 81, 0.1);
+}
+
+/* Table */
+.users-table-container {
+  background: var(--primary-white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 166, 81, 0.1);
+}
+
+.users-table {
+  width: 100%;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(0, 166, 81, 0.05);
+  border-bottom: 2px solid rgba(0, 166, 81, 0.1);
+  font-weight: 600;
+  color: var(--primary-black);
+}
+
+.header-cell {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 166, 81, 0.1);
+  transition: all 0.3s ease;
+}
+
+.table-row:hover {
+  background: rgba(0, 166, 81, 0.02);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell {
+  display: flex;
+  align-items: center;
+}
+
+/* Member Info */
+.member-info {
+  gap: 15px;
+}
+
+.member-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--primary-green);
+  color: var(--primary-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.member-details h4 {
+  margin: 0 0 5px 0;
+  color: var(--primary-black);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.member-id {
+  margin: 0 0 5px 0;
+  color: #666;
+  font-size: 0.9rem;
+  font-family: monospace;
+}
+
+.join-date {
+  margin: 0;
+  color: #999;
+  font-size: 0.8rem;
+}
+
+/* Contact Info */
+.contact-info p {
+  margin: 0 0 5px 0;
+  color: var(--primary-black);
+}
+
+.contact-info .email {
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.contact-info .phone,
+.contact-info .location {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Membership Info */
+.membership-info p {
+  margin: 0 0 5px 0;
+  color: var(--primary-black);
+}
+
+.membership-type {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.membership-amount {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Status */
+.status-cell {
+  justify-content: center;
+}
+
+.status-badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-active {
+  background: rgba(0, 166, 81, 0.1);
+  color: var(--primary-green);
+}
+
+.status-inactive {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.status-suspended {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.status-unknown {
+  background: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+}
+
+/* Actions */
+.actions {
+  justify-content: center;
+}
+
+.status-select {
+  padding: 8px 16px;
+  border: 2px solid rgba(0, 166, 81, 0.2);
+  border-radius: 15px;
+  font-size: 0.9rem;
+  background: var(--primary-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(0, 166, 81, 0.1);
+}
+
+/* No Users State */
+.no-users {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.no-users p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Loading State */
+.users-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 2fr 1.5fr 1.5fr 1fr;
+  }
+  
+  .header-cell:last-child,
+  .table-cell:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .header-cell {
+    display: none;
+  }
+  
+  .table-cell {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .member-info {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .contact-info,
+  .membership-info,
+  .status-cell,
+  .actions {
+    border-top: 1px solid rgba(0, 166, 81, 0.1);
+    padding-top: 15px;
+    width: 100%;
+  }
+  
+  .status-cell {
+    align-items: flex-start;
+  }
+  
+  .actions {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .users-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .users-stats {
+    justify-content: center;
+  }
+  
+  .users-controls {
+    flex-direction: column;
+  }
+  
+  .search-filter {
+    min-width: auto;
+  }
+  
+  .table-row {
+    padding: 15px;
+  }
+  
+  .member-photo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .member-details h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .users-table-container {
+    border-radius: 15px;
+  }
+  
+  .table-row {
+    padding: 12px;
+  }
+  
+  .member-photo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .member-details h4 {
+    font-size: 0.9rem;
+  }
+  
+  .stat-item {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
